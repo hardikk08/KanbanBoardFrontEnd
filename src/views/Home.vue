@@ -1,11 +1,20 @@
 <template>
-  <div class="home">
-
+  <div class="layout">
+    <Header></Header>
+    <Container></Container>
   </div>
 </template>
-
 <script>
+import Header from '@/components/Header'
+import Container from '@/components/Container'
+
 export default {
-  name: 'home'
+  name: 'Home',
+  components: { Header, Container }
 }
 </script>
+<style scoped>
+.layout {
+  margin: 20px;
+}
+</style>
